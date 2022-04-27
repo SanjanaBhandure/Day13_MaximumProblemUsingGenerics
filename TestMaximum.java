@@ -3,27 +3,28 @@
  * finds Maximum of 3 variables using Generics.
  *
  * @author: Sanjana Bhandure
- * @version: 1.1
+ * @version: 1.2
  * @date: 27-04-2022
  */
+
 package com.Bridgelabz.Day13_MaximumProblemUsingGenerics;
 
 public class TestMaximum {
-    float x, y, z;
+    String x, y, z;
 
-    // constructor created
-    public TestMaximum(float x, float y, float z) {
+    // constructor
+    public TestMaximum(String x, String y, String z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
 
     /*
-     * testMaximum method created for checking max of three float values
+     * testMaximum method created for checking max of three Strings
      */
-    public static Float testMaximum(Float x, Float y, Float z) {
+    public static String testMaximum(String x, String y, String z) {
         // Initializing x as greater
-        Float max = x;
+        String max = x;
         if (y.compareTo(max) > 0)
             // as of now y is greater
             max = y;
@@ -39,7 +40,7 @@ public class TestMaximum {
     /*
      *  printMax method created for displaying maximum values from the given 3 variables.
      */
-    public static void printMax(Float x, Float y, Float z, Float max) {
+    public static void printMax(String x, String y, String z, String max) {
         System.out.printf("The max of %s, %s and %s is %s\n", x, y, z, max);
 
     }
