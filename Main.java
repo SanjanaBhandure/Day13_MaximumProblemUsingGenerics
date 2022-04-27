@@ -7,9 +7,9 @@ public class Main {
         System.out.println("Welcome to check max of three variables");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter values of a, b and c: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        float a = sc.nextFloat();
+        float b = sc.nextFloat();
+        float c = sc.nextFloat();
         //testMaximum method called
         TestMaximum.testMaximum(a,b,c);
     }
