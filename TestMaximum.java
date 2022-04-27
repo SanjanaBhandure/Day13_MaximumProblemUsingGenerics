@@ -1,30 +1,31 @@
 /*
  * The Generics program implements Test cases that simply
  * finds Maximum of 3 variables using Generics.
+ * REFACTOR 1: Refactor all the 3 to One Generic Method and find the maximum.
  *
  * @author: Sanjana Bhandure
- * @version: 1.2
+ * @version: 1.3
  * @date: 27-04-2022
  */
 
 package com.Bridgelabz.Day13_MaximumProblemUsingGenerics;
 
-public class TestMaximum {
-    String x, y, z;
+public class TestMaximum <T extends Comparable<T>>{
+    T x, y, z;
 
-    // constructor
-    public TestMaximum(String x, String y, String z) {
+    // constructor test maximum
+    public TestMaximum(T x, T y, T z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }
 
     /*
-     * testMaximum method created for checking max of three Strings
+     * testMaximum method extends comparable T
      */
-    public static String testMaximum(String x, String y, String z) {
+    public static <T extends Comparable<T>> T testMaximum(T x, T y, T z) {
         // Initializing x as greater
-        String max = x;
+        T max = x;
         if (y.compareTo(max) > 0)
             // as of now y is greater
             max = y;
@@ -40,8 +41,7 @@ public class TestMaximum {
     /*
      *  printMax method created for displaying maximum values from the given 3 variables.
      */
-    public static void printMax(String x, String y, String z, String max) {
-        System.out.printf("The max of %s, %s and %s is %s\n", x, y, z, max);
-
+    public static <T> void printMax(T x, T y, T z, T max) {
+        System.out.printf("The Max of following variables %s, %s and %s is %s\n", x, y, z, max);
     }
 }
