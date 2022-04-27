@@ -11,7 +11,7 @@ package com.Bridgelabz.Day13_MaximumProblemUsingGenerics;
 public class TestMaximum {
     int x, y, z;
 
-    // constructor
+    // constructor created
     public TestMaximum(float x, float y, float z) {
         this.x = x;
         this.y = y;
