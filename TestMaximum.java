@@ -9,7 +9,7 @@
 package com.Bridgelabz.Day13_MaximumProblemUsingGenerics;
 
 public class TestMaximum {
-    int x, y, z;
+    float x, y, z;
 
     // constructor created
     public TestMaximum(float x, float y, float z) {
