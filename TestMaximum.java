@@ -12,7 +12,7 @@ public class TestMaximum {
     int x, y, z;
 
     // constructor
-    public TestMaximum(int x, int y, int z) {
+    public TestMaximum(float x, float y, float z) {
         this.x = x;
         this.y = y;
         this.z = z;
