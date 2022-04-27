@@ -14,7 +14,7 @@ public class MaximumTest {
       */
     @Test
     public void stringMax1() {
-        String actualValue = TestMaximum.testMaximum("jam","apple","banana");
+        String actualValue = TestMaximum.testMaximum("peach","apple","banana");
         Assert.assertTrue("banana",true);
     }
 
@@ -23,7 +23,7 @@ public class MaximumTest {
       */
     @Test
     public void intMax2() {
-        int actualValue = TestMaximum.testMaximum(5,9,12);
+        int actualValue = TestMaximum.testMaximum(5,18,12);
         Assert.assertEquals(12,actualValue);
     }
 
@@ -32,7 +32,7 @@ public class MaximumTest {
       */
     @Test
     public void floatMax3() {
-        Float actualValue = TestMaximum.testMaximum(2.5f,12.5f,9.8f);
+        Float actualValue = TestMaximum.testMaximum(2.5f,11.5f,9.8f);
         Assert.assertTrue(true);
     }
 }

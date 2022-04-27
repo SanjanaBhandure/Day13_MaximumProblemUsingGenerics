@@ -1,17 +1,17 @@
 /*
  * The Generics program implements Test cases that simply
  * finds Maximum of 3 variables using Generics.
- * REFACTOR 1: Refactor all the 3 to One Generic Method and find the maximum.
+ * REFACTOR 2: Refactor to create Generic Class to take in 3 Variable of Generic Type.
  *
  * @author: Sanjana Bhandure
- * @version: 1.3
- * @date: 27-04-2022
+ * @version: 1.4
+ * @date: 28-04-2022
  */
 
 package com.Bridgelabz.Day13_MaximumProblemUsingGenerics;
 
 public class TestMaximum <T extends Comparable<T>>{
-    T x, y, z;
+    private T x, y, z;
 
     // constructor test maximum
     public TestMaximum(T x, T y, T z) {
@@ -35,7 +35,6 @@ public class TestMaximum <T extends Comparable<T>>{
             max = z;
         printMax(x,y,z,max);
         return max;
-
     }
 
     /*
