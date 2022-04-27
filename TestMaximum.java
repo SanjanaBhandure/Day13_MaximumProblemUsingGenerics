@@ -19,7 +19,7 @@ public class TestMaximum {
     }
 
     /*
-     * testMaximum method created for checking max of three integers
+     * testMaximum method created for checking max of three float values
      */
     public static Float testMaximum(Float x, Float y, Float z) {
         // Initializing x as greater
