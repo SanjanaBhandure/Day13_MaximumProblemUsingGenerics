@@ -1,6 +1,7 @@
 /*
  * The Generics program implements Test cases that simply
  * finds Maximum of 3 variables using Generics.
+ * UC1 - Given 3 Integers find the maximum
  *
  * @author: Sanjana Bhandure
  * @version: 1.0
