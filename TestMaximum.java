@@ -1,10 +1,10 @@
 /*
  * The Generics program implements Test cases that simply
  * finds Maximum of 3 variables using Generics.
- * REFACTOR 2: Refactor to create Generic Class to take in 3 Variable of Generic Type.
+ * UC5 - Extend the max method to also print the max to std out using Generic Method.
  *
  * @author: Sanjana Bhandure
- * @version: 1.4
+ * @version: 1.5
  * @date: 28-04-2022
  */
 
@@ -21,7 +21,7 @@ public class TestMaximum <T extends Comparable<T>>{
     }
 
     /*
-     * testMaximum method extends comparable T
+     * testMaximum method extends comparable T to extend the max method to take more than three parameters
      */
     public static<T extends Comparable<T>> T testMaximum(T...values){
         T max = values[0];
@@ -35,9 +35,12 @@ public class TestMaximum <T extends Comparable<T>>{
     }
 
     /*
-     *  printMax method created for displaying maximum values from the given 3 variables.
+     *  printMax method created for displaying maximum values from more than three parameters
      */
-    public static <T> void printMax(T max) {
-        System.out.println("The maximum values is:\t" +max);
+    public static <T> void printMax(T max, T... values) {
+        for (T element : values) {
+            System.out.print(element+ "\t");
+        }
+        System.out.print("\n The maximum value is: " + max + "\n");
     }
 }
