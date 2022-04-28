@@ -15,7 +15,7 @@ public class MaximumTest {
     @Test
     public void stringMax1() {
         String actualValue = TestMaximum.testMaximum("peach","apple","banana");
-        Assert.assertTrue("banana",true);
+        Assert.assertEquals("peach",actualValue);
     }
 
      /*
@@ -27,12 +27,22 @@ public class MaximumTest {
         Assert.assertEquals(12,actualValue);
     }
 
-     /*
-      * TC 1.3 Given Max Float find the maximum Float Value.
-      */
+    /*
+     * TC 1.3 Given Max Float find the maximum Float Value.
+     */
     @Test
     public void floatMax3() {
-        Float actualValue = TestMaximum.testMaximum(2.5f,11.5f,9.8f);
+        Float actualValue = TestMaximum.testMaximum(2.5f, 11.5f, 9.8f);
         Assert.assertTrue(true);
     }
+
+    /*
+     * TC 4 Extending the max method to take more than three parameters
+     */
+    @Test
+    public void givenStringValuesWhenGetMaximumShouldReturnCorrectValue() {
+          String actualResult = TestMaximum.testMaximum("Apple", "Peach", "Banana", "Mango","Strawberry");
+          Assert.assertEquals("Strawberry", actualResult);
+      }
+
 }

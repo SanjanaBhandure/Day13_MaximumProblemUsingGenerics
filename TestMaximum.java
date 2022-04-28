@@ -23,24 +23,21 @@ public class TestMaximum <T extends Comparable<T>>{
     /*
      * testMaximum method extends comparable T
      */
-    public static <T extends Comparable<T>> T testMaximum(T x, T y, T z) {
-        // Initializing x as greater
-        T max = x;
-        if (y.compareTo(max) > 0)
-            // as of now y is greater
-            max = y;
-
-        if (z.compareTo(max) > 0)
-            // now z is greater
-            max = z;
-        printMax(x,y,z,max);
+    public static<T extends Comparable<T>> T testMaximum(T...values){
+        T max = values[0];
+        for(T element : values){
+            if(element.compareTo(max)>0){
+                max = element;
+            }
+        }
+        printMax(max);
         return max;
     }
 
     /*
      *  printMax method created for displaying maximum values from the given 3 variables.
      */
-    public static <T> void printMax(T x, T y, T z, T max) {
-        System.out.printf("The Max of following variables %s, %s and %s is %s\n", x, y, z, max);
+    public static <T> void printMax(T max) {
+        System.out.println("The maximum values is:\t" +max);
     }
 }
